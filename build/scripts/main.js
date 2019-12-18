@@ -1,15 +1,12 @@
-// const nav = document.getElementById("#burger");
-// const button = document.querySelector("burgerMenu");
+import { NONAME } from 'dns';
 
-// button.addEventListener('click', function (e) {
-//     e.preventDefault();
-//     nav.classList.toggle("burgerMenu");
-//     console.log(e.target);
-// });
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.burgerMenu ul');
 
-// const burgerExpand = document.querySelector("#burger");
-// const burgerMenu = document.querySelector(".burgerMenu")
-
-// burgerExpand.addEventListener("click", function (e) {
-//     document.body.classList.toggle("burgerMenu")
-// });
+burger.addEventListener('click', function(e) {
+  e.preventDefault();
+  // burger.classList.toggle('menu');
+  //   menu.style.display = 'none';
+  //   document.querySelector('.burgerMenu ul').style.display = 'none';
+  console.log(e.target);
+});

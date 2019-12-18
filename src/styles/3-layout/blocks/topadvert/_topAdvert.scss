@@ -1,24 +1,32 @@
 .advert {
+    position: relative;
     width: 100%;
-    background: linear-gradient(#7af,#add8e6);
+    background: #43464B;
     display: flex;
     justify-content: flex-end;
-    font-size: 1em;
-    height: 20px;
+    @include respond(iphonex) {
+        justify-content: center;
+    }
+    line-height: 2.2;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    height: 3rem;
             a {
             cursor: pointer;
             text-decoration: none;
             font-family: 'Lato', sans-serif;
+     
             color: #f5f5f5;
             @include respond(galaxy5) {
                 margin-right: auto;
             }}
             a:nth-child(2) {
+                padding-left: 0.8rem;
                 @include respond(iphone4) {
-                    margin-right: 23px;
+                    margin-right: 2.3rem;
             }}
             a:hover {
-                color: #000080;
+                color: #2277ff;
                 text-decoration: underline;
                 text-decoration-color: #f5f5f5;
             }

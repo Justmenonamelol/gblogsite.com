@@ -14,22 +14,136 @@
 1em = 16px (12 font size Office word);
 */
 html, body {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.advert {
-  width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#7af), to(#add8e6));
-  background: linear-gradient(#7af, #add8e6);
+.burger {
+  position: absolute;
+  z-index: 2;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  font-size: 1em;
-  height: 20px;
+  border: 1px solid green;
+  margin: 0.2rem 0.2rem 0 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(34, 119, 255, 0);
+  width: 30px;
+  height: 27px;
+}
+
+@media (min-width: 64em) {
+  .burger {
+    display: none;
+  }
+}
+
+.burger span:nth-of-type(1) {
+  display: block;
+  background: whitesmoke;
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 2px auto;
+}
+
+.burger span:nth-of-type(2) {
+  display: block;
+  background: whitesmoke;
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 1px auto;
+}
+
+.burger span:nth-of-type(3) {
+  background: whitesmoke;
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 2px auto 8px auto;
+}
+
+/*---------------Navbar------------------*/
+nav {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #add8e6), color-stop(90%, #2277ff));
+  background: linear-gradient(#add8e6 10%, #2277ff 90%);
+  width: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*---------------Burger menu (Navbar)------------------*/
+.burgerMenu {
+  height: 26rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 33px 0px 0px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#327cfa), to(#add8e6));
+  background: linear-gradient(#327cfa, #add8e6);
+}
+
+.burgerMenu ul {
+  height: 256px;
+  width: 18.9rem;
+  margin: 0px 0px 0px 0px;
+  position: absolute;
+  right: 0;
+}
+
+.burgerMenu li {
+  list-style-type: none;
+}
+
+.burgerMenu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  border: 1px solid white;
+  width: 17rem;
+  height: 1.5rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.6rem;
+  line-height: 10px;
+  background: #110a6b;
+  text-decoration: none;
+  color: white;
+}
+
+.advert {
+  position: relative;
+  width: 100%;
+  background: #43464B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  line-height: 2.2;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  height: 3rem;
+}
+
+@media (max-width: 375px) {
+  .advert {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .advert a {
@@ -45,14 +159,18 @@ html, body {
   }
 }
 
+.advert a:nth-child(2) {
+  padding-left: 0.8rem;
+}
+
 @media (max-width: 20em) {
   .advert a:nth-child(2) {
-    margin-right: 23px;
+    margin-right: 2.3rem;
   }
 }
 
 .advert a:hover {
-  color: #000080;
+  color: #2277ff;
   text-decoration: underline;
   -webkit-text-decoration-color: #f5f5f5;
           text-decoration-color: #f5f5f5;
@@ -72,59 +190,5 @@ html, body {
   .advert .prefixCode {
     display: none;
   }
-}
-
-#burger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  margin-right: 1px;
-  margin-top: 1px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  border: 1px solid white;
-  border-radius: 7px;
-  background: #2277ff;
-  width: 30px;
-  height: 27px;
-}
-
-#burger span:nth-of-type(1) {
-  display: block;
-  background: whitesmoke;
-  width: 15px;
-  height: 1px;
-  margin: 2px auto;
-}
-
-#burger span:nth-of-type(2) {
-  display: block;
-  background: whitesmoke;
-  width: 15px;
-  height: 1px;
-  margin: 1px auto;
-}
-
-#burger span:nth-of-type(3) {
-  background: whitesmoke;
-  width: 15px;
-  height: 1px;
-  margin: 2px auto 8px auto;
-}
-
-/*---------------Navbar------------------*/
-nav {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #add8e6), color-stop(70%, #2277ff));
-  background: linear-gradient(#add8e6 30%, #2277ff 70%);
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */

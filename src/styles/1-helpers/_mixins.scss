@@ -35,6 +35,9 @@
     @if $breakpoint == galaxy5 {
         @media (max-width: 360px) { @content}; // 360px (galaxy5);
     }
+    @if $breakpoint == iphonex {
+        @media (max-width: 375px) { @content}; // 375px (iphonex);
+    }
     @if $breakpoint == phone {
         @media (min-width: 48em) { @content }; // 768px (Phone);
     }

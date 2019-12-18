@@ -1,32 +1,36 @@
-  #burger {
+.burger {
+  position: absolute;
+  z-index: 2;
+  right: 0;
   display: flex;
-  margin-left: auto;
-  margin-right: 1px;
-  margin-top: 1px;
-  flex-direction: column;
   justify-content: flex-end;
-  border: 1px solid white;
-  border-radius:7px;
-  background: #2277ff;
+  border: 1px solid green;
+  margin: 0.2rem 0.2rem 0 0;
+  flex-direction: column;
+  background: rgba(34, 119, 255, 0.0);
   width: 30px;
   height: 27px;
+  @include respond(tablet) {
+    display: none;
+  }
   span:nth-of-type(1) {
     display: block;
     background: whitesmoke;
-    width: 15px;
-    height: 1px;
+    width: 1.5rem;
+    height: 0.2rem;
     margin: 2px auto;
   }
   span:nth-of-type(2) {
     display: block;
     background: whitesmoke;
-    width: 15px;
-    height: 1px;
+    width: 1.5rem;
+    height: 0.2rem;
     margin: 1px auto;
   }
   span:nth-of-type(3) {
     background: whitesmoke;
-    width: 15px;
-    height: 1px;
+    width: 1.5rem;
+    height: 0.2rem;
     margin: 2px auto 8px auto;
-  }}
+  }
+}
