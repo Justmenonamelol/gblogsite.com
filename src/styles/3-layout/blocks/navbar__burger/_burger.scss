@@ -4,12 +4,11 @@
   right: 0;
   display: flex;
   justify-content: flex-end;
-  border: 1px solid green;
   margin: 0.2rem 0.2rem 0 0;
   flex-direction: column;
-  background: rgba(34, 119, 255, 0.0);
-  width: 30px;
-  height: 27px;
+  background: rgba(34, 119, 255, 0);
+  width: 3rem;
+  height: 2.7rem;
   @include respond(tablet) {
     display: none;
   }

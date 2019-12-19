@@ -31,15 +31,14 @@ html, body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  border: 1px solid green;
   margin: 0.2rem 0.2rem 0 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background: rgba(34, 119, 255, 0);
-  width: 30px;
-  height: 27px;
+  width: 3rem;
+  height: 2.7rem;
 }
 
 @media (min-width: 64em) {
@@ -76,27 +75,19 @@ nav {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #add8e6), color-stop(90%, #2277ff));
   background: linear-gradient(#add8e6 10%, #2277ff 90%);
   width: 100%;
+  height: 3.3rem;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*---------------Burger menu (Navbar)------------------*/
-.burgerMenu--display {
-  display: none;
-}
-
 .burgerMenu {
-  height: 26rem;
-  width: 100%;
-  margin: 33px 0px 0px 0px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#327cfa), to(#add8e6));
-  background: linear-gradient(#327cfa, #add8e6);
+  margin: 28px 0px 0px 0px;
+  display: none;
 }
 
 .burgerMenu ul {
   height: 256px;
   width: 18.9rem;
-  margin: 0px 0px 0px 0px;
   position: absolute;
   right: 0;
 }
@@ -121,6 +112,10 @@ nav {
   background: #110a6b;
   text-decoration: none;
   color: white;
+}
+
+.burgerMenu--display {
+  display: block;
 }
 
 .advert {

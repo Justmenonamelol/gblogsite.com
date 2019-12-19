@@ -1,6 +1,8 @@
 const burger = document.querySelector('.burger');
-const menu = document.querySelector('.burgerMenu ul');
+const menu = document.querySelector('.burgerMenu');
 
 burger.addEventListener('click', function(e) {
-  document.body.classList.toggle('burgerMenu--display');
+  e.preventDefault();
+  menu.classList.toggle('burgerMenu--display');
+  // menu.style.display = 'none';
 });
