@@ -1,8 +1,10 @@
 /*---------------Burger menu (Navbar)------------------*/
+.burgerMenu--display {
+  display: none;
+}
 .burgerMenu {
   height: 26rem;
   width: 100%;
-  display: flex;
   margin: 33px 0px 0px 0px;
   background: linear-gradient(rgb(50, 124, 250), #add8e6);
   ul {

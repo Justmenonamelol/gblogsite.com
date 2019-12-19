@@ -81,12 +81,13 @@ nav {
 }
 
 /*---------------Burger menu (Navbar)------------------*/
+.burgerMenu--display {
+  display: none;
+}
+
 .burgerMenu {
   height: 26rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 33px 0px 0px 0px;
   background: -webkit-gradient(linear, left top, left bottom, from(#327cfa), to(#add8e6));
   background: linear-gradient(#327cfa, #add8e6);

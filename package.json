@@ -2,13 +2,13 @@
   "name": "gblogsite",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {
-    "moment": "^2.24.0",
-    "parcel-bundler": "^1.12.3"
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel build/index.html",
+    "build": "parcel build build/index.html"
   },
   "repository": {
     "type": "git",
