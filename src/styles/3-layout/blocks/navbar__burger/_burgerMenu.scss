@@ -1,6 +1,6 @@
 /*---------------Burger menu (Navbar)------------------*/
 .burgerMenu {
-  margin: 28px 0px 0px 0px;
+  margin: 2.8rem 0rem 0rem 0rem;
   display: none;
   @include respond(tablet) {
     display: block;
@@ -46,6 +46,10 @@
       font-size: 1.2rem;
     }
   }
+}
+a:hover {
+  font-style: italic;
+  color: lightcyan;
 }
 .burgerMenu--display {
   display: block;
