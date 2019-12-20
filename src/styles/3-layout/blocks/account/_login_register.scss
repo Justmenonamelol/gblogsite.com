@@ -1,0 +1,10 @@
+a.account__login {
+  @include respond(tablet) {
+    padding-top: 0.7rem;
+  }
+}
+a.account__register {
+  @include respond(tablet) {
+    padding-top: 0.7rem;
+  }
+}

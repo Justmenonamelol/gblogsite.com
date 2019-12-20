@@ -85,11 +85,32 @@ nav {
   display: none;
 }
 
+@media (min-width: 64em) {
+  .burgerMenu {
+    display: block;
+  }
+}
+
 .burgerMenu ul {
-  height: 256px;
   width: 18.9rem;
   position: absolute;
   right: 0;
+}
+
+@media (min-width: 64em) {
+  .burgerMenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 84rem;
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin: 3rem 0;
+  }
 }
 
 .burgerMenu li {
@@ -100,7 +121,7 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 8px;
+  padding: 0.8rem;
   border: 1px solid white;
   width: 17rem;
   height: 1.5rem;
@@ -108,20 +129,50 @@ nav {
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-size: 1.6rem;
-  line-height: 10px;
+  line-height: 1rem;
   background: #110a6b;
   text-decoration: none;
   color: white;
+}
+
+@media (min-width: 64em) {
+  .burgerMenu a {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 6rem;
+    border: none;
+    font-weight: 600;
+    padding-top: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.2rem;
+  }
 }
 
 .burgerMenu--display {
   display: block;
 }
 
+@media (min-width: 64em) {
+  a.account__login {
+    padding-top: 0.7rem;
+  }
+}
+
+@media (min-width: 64em) {
+  a.account__register {
+    padding-top: 0.7rem;
+  }
+}
+
 .advert {
   position: relative;
   width: 100%;
-  background: #43464B;
+  background: #43464b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,6 +236,12 @@ nav {
 @media (max-width: 20em) {
   .advert .prefixCode {
     display: none;
+  }
+}
+
+@media (min-width: 376px) {
+  .advert__phone__email {
+    padding-right: 1.7rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

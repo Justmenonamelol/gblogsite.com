@@ -1,16 +1,16 @@
 @mixin clearfix {
-    &::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
 }
 
 @mixin absCenter {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 // MEDIA QUERY MANAGER
 /*
@@ -29,22 +29,34 @@
 1em = 16px (12 font size Office word);
 */
 @mixin respond($breakpoint) {
-    @if $breakpoint == iphone4 {
-        @media (max-width: 20em) { @content }; // 320px (iphone4);
-    }
-    @if $breakpoint == galaxy5 {
-        @media (max-width: 360px) { @content}; // 360px (galaxy5);
-    }
-    @if $breakpoint == iphonex {
-        @media (max-width: 375px) { @content}; // 375px (iphonex);
-    }
-    @if $breakpoint == phone {
-        @media (min-width: 48em) { @content }; // 768px (Phone);
-    }
-    @if $breakpoint == tablet {
-        @media (min-width: 64em) { @content }; // 1024px (Tablet);
-    }
-    @if $breakpoint == desktop {
-        @media (min-width: 90em) { @content }; // 1440px (Desktop);
-    }
+  @if $breakpoint == iphone4 {
+    @media (max-width: 20em) {
+      @content;
+    } // 320px (iphone4)  @include respond(iphone4) {content};
+  }
+  @if $breakpoint == galaxy5 {
+    @media (max-width: 360px) {
+      @content;
+    } // 360px (galaxy5)  @include respond(galaxy5) {content};
+  }
+  @if $breakpoint == iphonex {
+    @media (max-width: 375px) {
+      @content;
+    } // 375px (iphonex)  @include respond(iphonex) {content};
+  }
+  @if $breakpoint == phone {
+    @media (min-width: 48em) {
+      @content;
+    } // 768px (phone)  @include respond(Phone) {content};
+  }
+  @if $breakpoint == tablet {
+    @media (min-width: 64em) {
+      @content;
+    } // 1024px (tablet)  @include respond(tablet) {content};
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 90em) {
+      @content;
+    } // 1440px (desktop) @include respond(desktop) {content};
+  }
 }

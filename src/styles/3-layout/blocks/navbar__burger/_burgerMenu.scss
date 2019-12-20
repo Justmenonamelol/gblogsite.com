@@ -1,29 +1,50 @@
 /*---------------Burger menu (Navbar)------------------*/
-
 .burgerMenu {
   margin: 28px 0px 0px 0px;
   display: none;
+  @include respond(tablet) {
+    display: block;
+  }
   ul {
-    height: 256px;
     width: 18.9rem;
     position: absolute;
     right: 0;
+    @include respond(tablet) {
+      display: flex;
+      justify-content: flex-end;
+      width: 84rem;
+      top: 0;
+      right: 0;
+      position: fixed;
+      margin: 3rem 0;
+    }
   }
   li {
     list-style-type: none;
   }
   a {
     display: flex;
-    padding: 8px;
+    padding: 0.8rem;
     border: 1px solid white;
     width: 17rem;
     height: 1.5rem;
     justify-content: flex-end;
     font-size: 1.6rem;
-    line-height: 10px;
+    line-height: 1rem;
     background: #110a6b;
     text-decoration: none;
     color: white;
+    @include respond(tablet) {
+      font-family: Arial, Helvetica, sans-serif;
+      width: 6rem;
+      border: none;
+      font-weight: 600;
+      padding-top: 1.2rem;
+      display: flex;
+      background: none;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
   }
 }
 .burgerMenu--display {
