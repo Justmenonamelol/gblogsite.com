@@ -2,7 +2,9 @@
   "name": "gblogsite",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "core-js": "^3.6.0"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   },

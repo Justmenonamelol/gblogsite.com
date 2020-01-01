@@ -7,10 +7,12 @@
 @import '2-base/reset-list';
 @import '2-base/html__body.scss';
 // @import '3-layout/3-layout':
-@import '3-layout/blocks/navbar__burger/burger';
 @import '3-layout/blocks/navbar__burger/navBar';
+@import '3-layout/blocks/navbar__burger/logo';
+@import '3-layout/blocks/navbar__burger/burger';
 @import '3-layout/blocks/navbar__burger/burgerMenu';
 @import '3-layout/blocks/account/login_register';
 @import '3-layout/blocks/topadvert/topAdvert';
+@import '3-layout/contact/form';
 // @import '4-modules/4-modules';
 // @import '5-templates/5-templates';

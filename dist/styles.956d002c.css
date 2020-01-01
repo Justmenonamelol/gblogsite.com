@@ -21,9 +21,28 @@ html, body {
   padding: 0;
 }
 
+/*---------------Navbar------------------*/
+nav {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #add8e6), color-stop(90%, #2277ff));
+  background: linear-gradient(#add8e6 10%, #2277ff 90%);
+  width: 100%;
+  height: 3.3rem;
+  position: fixed;
+}
+
+.logo img {
+  width: 8rem;
+  position: relative;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
 .burger {
   position: absolute;
   z-index: 2;
+  top: 0;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,15 +89,6 @@ html, body {
   margin: 2px auto 8px auto;
 }
 
-/*---------------Navbar------------------*/
-nav {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #add8e6), color-stop(90%, #2277ff));
-  background: linear-gradient(#add8e6 10%, #2277ff 90%);
-  width: 100%;
-  height: 3.3rem;
-  position: absolute;
-}
-
 /*---------------Burger menu (Navbar)------------------*/
 .burgerMenu {
   margin: 2.8rem 0rem 0rem 0rem;
@@ -92,6 +102,8 @@ nav {
 }
 
 .burgerMenu ul {
+  top: 0;
+  margin-top: 3.4rem;
   width: 18.9rem;
   position: absolute;
   right: 0;
@@ -118,6 +130,7 @@ nav {
 }
 
 .burgerMenu a {
+  position: static;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,6 +261,24 @@ a:hover {
   .advert__phone__email {
     padding-right: 1.7rem;
   }
+}
+
+.main {
+  border: 0.1rem solid black;
+  background: #b0b2b7;
+}
+
+.contact-form {
+  margin-top: 9rem;
+  margin-bottom: 9.6rem;
+  background: white;
+  border: 1px solid green;
+  height: 30rem;
+}
+
+.getintouch {
+  color: green;
+  font-size: 2rem;
 }
 
 

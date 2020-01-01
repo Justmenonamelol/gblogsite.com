@@ -122,7 +122,7 @@ var burger = document.querySelector('.burger');
 var menu = document.querySelector('.burgerMenu');
 burger.addEventListener('click', function (e) {
   e.preventDefault();
-  menu.classList.toggle('burgerMenu--display'); // menu.style.display = 'none';
+  menu.classList.toggle('burgerMenu--display');
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -152,7 +152,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49500" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60992" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
