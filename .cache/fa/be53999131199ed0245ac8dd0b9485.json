@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"index.js","dependencies":[{"name":"/Users/justmenonamelol/Documents/Websites/gblogsite /package.json","includedInParent":true,"mtime":1577990451043}],"generated":{"js":""},"sourceMaps":{"js":{"mappings":[],"sources":{"index.js":""},"lineCount":null}},"error":null,"hash":"1f17d228e3ca6a7c283bd6037b49f7e6","cacheData":{"env":{}}}
+=======
+{"id":"index.js","dependencies":[{"name":"/Users/justmenonamelol/Documents/Websites/gblogsite /package.json","includedInParent":true,"mtime":1576884744401}],"generated":{"js":""},"sourceMaps":{"js":{"mappings":[],"sources":{"index.js":""},"lineCount":null}},"error":null,"hash":"1f17d228e3ca6a7c283bd6037b49f7e6","cacheData":{"env":{}}}
+>>>>>>> 4be26de5296301d2eb8718599f6c5ad74c7c9f82
