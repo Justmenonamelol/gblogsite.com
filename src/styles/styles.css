@@ -1,0 +1,264 @@
+/*
+0 - 320px: IPhone4
+0 - 360px: Galaxy5
+0 - 768px:  Phone
+768 - 1024px: Tablet port
+1024-1440px; PC port (Desktop)
+/*
+@breakpoint arguement choices:
+- iphone4
+-galaxy5
+- phone
+- tablet
+- desktop 
+1em = 16px (12 font size Office word);
+*/
+html, body {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*---------------Navbar------------------*/
+nav {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #add8e6), color-stop(90%, #2277ff));
+  background: linear-gradient(#add8e6 10%, #2277ff 90%);
+  width: 100%;
+  height: 3.3rem;
+  position: absolute;
+}
+
+.logo img {
+  width: 8rem;
+  position: relative;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
+.burger {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0.2rem 0.2rem 0 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(34, 119, 255, 0);
+  width: 3rem;
+  height: 2.7rem;
+}
+
+@media (min-width: 64em) {
+  .burger {
+    display: none;
+  }
+}
+
+.burger span:nth-of-type(1) {
+  display: block;
+  background: whitesmoke;
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 2px auto;
+}
+
+.burger span:nth-of-type(2) {
+  display: block;
+  background: whitesmoke;
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 1px auto;
+}
+
+.burger span:nth-of-type(3) {
+  background: whitesmoke;
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 2px auto 8px auto;
+}
+
+/*---------------Burger menu (Navbar)------------------*/
+.burgerMenu {
+  margin: 2.8rem 0rem 0rem 0rem;
+  display: none;
+}
+
+@media (min-width: 64em) {
+  .burgerMenu {
+    display: block;
+  }
+}
+
+.burgerMenu ul {
+  top: 0;
+  margin-top: 3.4rem;
+  width: 18.9rem;
+  position: absolute;
+  right: 0;
+}
+
+@media (min-width: 64em) {
+  .burgerMenu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 84rem;
+    top: 0;
+    right: 0;
+    position: fixed;
+    margin: 3rem 0;
+  }
+}
+
+.burgerMenu li {
+  list-style-type: none;
+}
+
+.burgerMenu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.8rem;
+  border: 1px solid white;
+  width: 17rem;
+  height: 1.5rem;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.6rem;
+  line-height: 1rem;
+  background: #110a6b;
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 64em) {
+  .burgerMenu a {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 6rem;
+    border: none;
+    font-weight: 600;
+    padding-top: 1.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.2rem;
+  }
+}
+
+a:hover {
+  font-style: italic;
+  color: lightcyan;
+}
+
+.burgerMenu--display {
+  display: block;
+}
+
+@media (min-width: 64em) {
+  a.account__login {
+    padding-top: 0.7rem;
+  }
+}
+
+@media (min-width: 64em) {
+  a.account__register {
+    padding-top: 0.7rem;
+  }
+}
+
+.advert {
+  position: relative;
+  width: 100%;
+  background: #43464b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  line-height: 2.2;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  height: 3rem;
+}
+
+@media (max-width: 375px) {
+  .advert {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.advert a {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: #f5f5f5;
+}
+
+@media (max-width: 360px) {
+  .advert a {
+    margin-right: auto;
+  }
+}
+
+.advert a:nth-child(2) {
+  padding-left: 0.8rem;
+}
+
+@media (max-width: 20em) {
+  .advert a:nth-child(2) {
+    margin-right: 2.3rem;
+  }
+}
+
+.advert a:hover {
+  color: #2277ff;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f5f5f5;
+          text-decoration-color: #f5f5f5;
+}
+
+.advert .prefixCode {
+  display: inline;
+}
+
+@media (min-width: 322px) and (max-width: 333px) {
+  .advert .prefixCode {
+    display: none;
+  }
+}
+
+@media (max-width: 20em) {
+  .advert .prefixCode {
+    display: none;
+  }
+}
+
+@media (min-width: 376px) {
+  .advert__phone__email {
+    padding-right: 1.7rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

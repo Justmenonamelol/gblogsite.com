@@ -1,25 +1,25 @@
 {
-  "name": "gblogsite",
-  "version": "1.0.0",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  },
-  "scripts": {
-    "start": "parcel build/index.html",
-    "build": "parcel build build/index.html"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Justmenonamelol/gblogsite-.git"
-  },
-  "keywords": [],
-  "author": "Justmenonamelol",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Justmenonamelol/gblogsite-/issues"
-  },
-  "homepage": "https://github.com/Justmenonamelol/gblogsite-#readme",
-  "description": "Welcome to the gblogsite.com I hope you will have a good time in here."
+	"name": "gblogsite",
+	"version": "1.0.0",
+	"main": "index.js",
+	"dependencies": {},
+	"devDependencies": {
+		"parcel-bundler": "^1.12.4"
+	},
+	"scripts": {
+		"dev": "parcel build/index.html",
+		"build": "parcel build build/index.html"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Justmenonamelol/gblogsite-.git"
+	},
+	"keywords": [],
+	"author": "Justmenonamelol",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Justmenonamelol/gblogsite-/issues"
+	},
+	"homepage": "https://github.com/Justmenonamelol/gblogsite-#readme",
+	"description": "Welcome to the gblogsite.com I hope you will have a good time in here."
 }
